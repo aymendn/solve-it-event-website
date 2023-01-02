@@ -10,7 +10,7 @@ A landing page website for the <b>Solve-it</b> event that will be hosted by GDSC
 
 ## Preview
 
-You can access the website from this link: [Solve-it ↗](solve-it-event-website)
+You can access the website from this link: [Solve-it ↗](https://aymendn.github.io/solve-it-event-website)
 
 <p align="center">
 <img src="assets/thumbnail.png" alt="Thumbnail">
