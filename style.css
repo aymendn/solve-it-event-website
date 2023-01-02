@@ -1192,6 +1192,13 @@ footer .social {
 
 }
 
+@media screen and (max-width:260px) {
+   .workshop img {
+      width: 40vw;
+   }
+
+}
+
 
 
 /* ============================================================ */
