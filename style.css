@@ -414,15 +414,20 @@ nav .button {
    text-align: center;
    width: min(92%, 850px);
    overflow: hidden;
-   margin-top: 95px;
+   margin-top: clamp(70px, 15vh, 95px);
 
+}
+
+.hero .section-title {
+   line-height: 1.2;
 }
 
 .hero .description {
    font-weight: 500;
    font-size: clamp(1rem, 2.5vw, 1.1rem);
    line-height: 1.6;
-   margin: 10px 0 20px 0;
+   margin-top: 10px;
+   margin-bottom: clamp(0px, 1.8vh, 20px);
 }
 
 .hero .starts-in {
@@ -850,7 +855,7 @@ nav .button {
 }
 
 .workshops>* {
-   width: min(97%, 960px) !important;
+   width: min(95%, 960px) !important;
 }
 
 .workshops-grid {
@@ -1134,6 +1139,7 @@ footer .social {
 
    .workshops-grid {
       grid-template-columns: 1fr;
+      gap: 30px;
    }
 
    .workshop img {
