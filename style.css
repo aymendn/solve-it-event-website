@@ -59,6 +59,12 @@ a {
 
 }
 
+.button:active {
+   background-color: #105088 !important;
+   box-shadow: 0px 0px 30px rgba(5, 3, 145, 0.4);
+   transition: all 0ms;
+}
+
 .button,
 .counter,
 img {
@@ -500,8 +506,9 @@ nav .button {
 }
 
 .counter div:hover {
-   scale: 1.1;
+   scale: 1.05;
    cursor: pointer;
+   box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 .counter div p {
