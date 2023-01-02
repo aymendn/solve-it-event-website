@@ -938,6 +938,10 @@ nav .button {
    width: min(100%, 900px);
 }
 
+.sponsors .swiper {
+   padding: 20px 0;
+}
+
 .sponsor img {
    width: min(100%, 150px);
    height: min(100%, 110px);
