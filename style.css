@@ -104,7 +104,7 @@ img {
    /* background-color: rgb(226, 226, 226); */
 
    position: fixed;
-   top: 0;
+   top: 0 !important;
    z-index: 999;
 
    display: flex;
