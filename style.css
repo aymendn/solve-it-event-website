@@ -6,7 +6,7 @@ html,
 body {
    margin: 0;
    padding: 0;
-   overflow-x: hidden;
+   overflow-x: hidden !important;
    overflow-y: auto;
 }
 
@@ -751,428 +751,428 @@ nav .button {
    .event .description {
       font-size: 0.85rem;
    }
+}
 
-
-   @media only screen and (max-width: 360px) {
-      .event-wrapper {
-         align-items: flex-start;
-      }
-   }
-
-   @media only screen and (max-width: 360px) {
-      .event .title {
-         font-size: 0.85rem;
-         width: 100px;
-         padding-right: 5px;
-         padding-left: 10px;
-      }
-
-      .event .description {
-         font-size: 0.85rem;
-         width: clamp(120px, 50vw, 320px);
-      }
-   }
-
-   /* mentors*/
-   /* ============================================================ */
-   .mentors {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin: 20px 0;
-   }
-
-
-   .mentors>* {
-      width: min(100%, 1000px);
-   }
-
-   .mentor {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: start;
-
-      padding: 30px;
-      margin: 15px;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-   }
-
-
-
-   .mentor>* {
-      margin: 0;
-      white-space: initial;
-      width: 100%;
-   }
-
-   .mentor b {
-      line-height: 2;
-      font-weight: 900;
-      font-size: 1.1rem;
-   }
-
-   .mentor p {
-      line-height: 1.3;
-      font-size: 0.9rem;
-   }
-
-   .mentor img {
-      margin-bottom: 10px;
-
-   }
-
-
-
-   /* workshops */
-   /* ============================================================ */
-   .workshops {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin: 20px 0;
-   }
-
-   .workshops>* {
-      width: min(95%, 960px) !important;
-   }
-
-   .workshops-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: min(35px, 4vw);
-      width: 100%;
-      margin: 20px 0;
-   }
-
-   .workshop {
-      display: flex;
+@media only screen and (max-width: 380px) {
+   .event-wrapper {
       align-items: flex-start;
-      justify-content: flex-start;
-      text-align: start;
-      box-shadow: rgb(0 0 0 / 3%) 0px -1px 3px, rgb(0 0 0 / 5%) 0px 28px 23px -7px, rgb(0 0 0 / 4%) 0px 12px 12px -7px;
-      height: 200px;
-      gap: 20px;
+   }
+}
+
+@media only screen and (max-width: 360px) {
+   .event .title {
+      font-size: 0.85rem;
+      width: 100px;
+      padding-right: 5px;
+      padding-left: 10px;
    }
 
-   .workshop * {
-      margin: 0;
-      display: block;
+   .event .description {
+      font-size: 0.85rem;
+      width: clamp(120px, 50vw, 320px);
+   }
+}
+
+/* mentors*/
+/* ============================================================ */
+.mentors {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   margin: 20px 0;
+}
+
+
+.mentors>* {
+   width: min(100%, 1000px);
+}
+
+.mentor {
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: start;
+
+   padding: 30px;
+   margin: 15px;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.mentor>* {
+   margin: 0;
+   white-space: initial;
+   width: 100%;
+}
+
+.mentor b {
+   line-height: 2;
+   font-weight: 900;
+   font-size: 1.1rem;
+}
+
+.mentor p {
+   line-height: 1.3;
+   font-size: 0.9rem;
+}
+
+.mentor img {
+   margin-bottom: 10px;
+
+}
+
+
+
+/* workshops */
+/* ============================================================ */
+.workshops {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   margin: 20px 0;
+}
+
+.workshops>* {
+   width: min(95%, 960px) !important;
+}
+
+.workshops-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: min(35px, 4vw);
+   width: 100%;
+   margin: 20px 0;
+}
+
+.workshop {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: start;
+   box-shadow: rgb(0 0 0 / 3%) 0px -1px 3px, rgb(0 0 0 / 5%) 0px 28px 23px -7px, rgb(0 0 0 / 4%) 0px 12px 12px -7px;
+   height: 200px;
+   gap: 20px;
+}
+
+.workshop * {
+   margin: 0;
+   display: block;
+}
+
+.workshop p {
+   font-size: 0.9rem;
+   line-height: 1.3;
+}
+
+.workshop .title {
+   font-weight: 900;
+   font-size: 1.5rem;
+   line-height: 1.3;
+   padding: 10px 0 12px 12px;
+   margin: 10px 0 6px 0;
+   position: relative;
+}
+
+.workshop p {
+   font-size: 0.9rem;
+   line-height: 1.3;
+}
+
+.workshop img {
+   width: clamp(120px, 20vw, 160px);
+   min-height: 100%;
+   object-fit: cover;
+}
+
+.workshop .title::before {
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   bottom: 5px;
+   z-index: -1;
+   content: ' ';
+
+   -webkit-mask-size: cover;
+   mask-size: cover;
+   -webkit-mask-image: url(assets/triangle.svg);
+   mask-image: url(assets/triangle.svg);
+
+   background-color: #4285F4;
+   background-size: 40px;
+   height: 100%;
+   width: 100%;
+}
+
+.workshop:nth-child(2) .title::before {
+   background-color: #FBBC05;
+}
+
+.workshop:nth-child(3) .title::before {
+   background-color: #0F9D58;
+}
+
+.workshop:nth-child(4) .title::before {
+   background-color: #f8311f;
+}
+
+/* sponsors */
+/* ============================================================ */
+.sponsors {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   margin: 20px 0;
+}
+
+.sponsors>* {
+   width: min(100%, 900px);
+}
+
+.sponsor img {
+   width: min(100%, 150px);
+   height: min(100%, 110px);
+   object-fit: contain;
+}
+
+.sponsor {
+   height: 220px;
+   width: 220px;
+
+   margin: 20px auto;
+   border-radius: 50%;
+   box-shadow: 0px 0px 25px rgba(66, 133, 244, 0.3);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sonatrach {
+   box-shadow: 0px 0px 25px rgba(15, 157, 88, 0.3);
+}
+
+.ifri {
+   box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.3);
+}
+
+
+
+/* contact */
+/* ============================================================ */
+.contact {
+   background-color: #F4F4F4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.contact>* {
+   width: min(100%, 850px);
+}
+
+.contact form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.contact form>* {
+   min-height: 45px;
+   margin: 7px 0;
+   font-family: inherit;
+   border-radius: 5px;
+}
+
+.contact input,
+.contact textarea {
+   width: clamp(100px, 90%, 430px);
+
+   border: 2px solid rgba(0, 0, 0, 0.15);
+   padding: 5px 10px;
+   min-height: 35px;
+
+}
+
+.contact input:hover,
+.contact textarea:hover {
+   border: 2px solid rgba(0, 0, 0, 0.35);
+}
+
+
+
+.contact textarea {
+
+   height: 150px;
+   max-height: 150px;
+   resize: none;
+}
+
+.contact .button {
+   border: none;
+   width: clamp(100px, 96%, 455px);
+   background-color: #0086F8;
+}
+
+/* footer */
+/* ============================================================ */
+footer {
+   background-color: #0F9D58;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   padding: 20px 0;
+}
+
+footer>* {
+   width: min(95%, 850px);
+   color: white;
+   margin: 5px 0;
+}
+
+footer>img {
+   width: 350px;
+}
+
+footer .social {
+   margin: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+   footer>img {
+      width: 240px;
+   }
+}
+
+@media screen and (max-width: 280px) {
+   footer>img {
+      width: 200px;
+   }
+}
+
+
+/* responsive */
+/* ============================================================ */
+@media screen and (max-width: 380px) {
+   .counter {
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(5px, 2vw, 20px);
    }
 
-   .workshop p {
-      font-size: 0.9rem;
-      line-height: 1.3;
+   .counter div {
+      width: clamp(20px, 30vw, 100px);
    }
+}
 
-   .workshop .title {
-      font-weight: 900;
-      font-size: 1.5rem;
-      line-height: 1.3;
-      padding: 10px 0 12px 12px;
-      margin: 10px 0 6px 0;
-      position: relative;
-   }
-
-   .workshop p {
-      font-size: 0.9rem;
-      line-height: 1.3;
-   }
-
-   .workshop img {
-      width: clamp(120px, 20vw, 160px);
-      min-height: 100%;
-      object-fit: cover;
-   }
-
-   .workshop .title::before {
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      bottom: 5px;
-      z-index: -1;
-      content: ' ';
-
-      -webkit-mask-size: cover;
-      mask-size: cover;
-      -webkit-mask-image: url(assets/triangle.svg);
-      mask-image: url(assets/triangle.svg);
-
-      background-color: #4285F4;
-      background-size: 40px;
-      height: 100%;
-      width: 100%;
-   }
-
-   .workshop:nth-child(2) .title::before {
-      background-color: #FBBC05;
-   }
-
-   .workshop:nth-child(3) .title::before {
-      background-color: #0F9D58;
-   }
-
-   .workshop:nth-child(4) .title::before {
-      background-color: #f8311f;
-   }
-
-   /* sponsors */
-   /* ============================================================ */
-   .sponsors {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin: 20px 0;
-   }
-
-   .sponsors>* {
-      width: min(100%, 900px);
-   }
-
+@media screen and (max-width: 500px) {
    .sponsor img {
-      width: min(100%, 150px);
-      height: min(100%, 110px);
-      object-fit: contain;
+      width: min(100%, 130px);
+      height: min(100%, 95px);
+
    }
 
    .sponsor {
-      height: 220px;
-      width: 220px;
+      height: 190px;
+      width: 190px;
 
-      margin: 20px auto;
-      border-radius: 50%;
-      box-shadow: 0px 0px 25px rgba(66, 133, 244, 0.3);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-
-   .sonatrach {
-      box-shadow: 0px 0px 25px rgba(15, 157, 88, 0.3);
-   }
-
-   .ifri {
-      box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.3);
-   }
-
-
-
-   /* contact */
-   /* ============================================================ */
-   .contact {
-      background-color: #F4F4F4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin-top: 20px;
-   }
-
-   .contact>* {
-      width: min(100%, 850px);
-   }
-
-   .contact form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 40px;
-   }
-
-   .contact form>* {
-      min-height: 45px;
-      margin: 7px 0;
-      font-family: inherit;
-      border-radius: 5px;
-   }
-
-   .contact input,
-   .contact textarea {
-      width: clamp(100px, 90%, 430px);
-
-      border: 2px solid rgba(0, 0, 0, 0.15);
-      padding: 5px 10px;
-      min-height: 35px;
+      margin: 10px auto;
 
    }
+}
 
-   .contact input:hover,
-   .contact textarea:hover {
-      border: 2px solid rgba(0, 0, 0, 0.35);
+@media screen and (max-width: 768px) {
+
+   .shape {
+      top: 50vh;
+      height: min(30vh, 250px);
+   }
+
+   .circle {
+      right: -15px;
+   }
+
+   .square {
+      left: -15px;
+   }
+
+   .workshops-grid {
+      grid-template-columns: 1fr;
+   }
+
+   .workshop img {
+      width: clamp(100px, 30vw, 180px);
+   }
+
+   .mentor {
+
+
+      padding: 18px;
+      font-size: 20px;
+   }
+
+   .mentor p {
+      font-size: 14px;
+      line-height: 1.3;
+   }
+
+   .mentor b {
+      font-size: max(16px, 2.3vw);
+      line-height: 1.3;
    }
 
 
+}
 
-   .contact textarea {
-
-      height: 150px;
-      max-height: 150px;
-      resize: none;
+@media screen and (max-width:1000px) and (min-width: 768px),
+(max-width: 400px) {
+   .workshop .title {
+      font-size: clamp(1.05rem, 2.2vw, 1.5rem);
    }
-
-   .contact .button {
-      border: none;
-      width: clamp(100px, 96%, 455px);
-      background-color: #0086F8;
-   }
-
-   /* footer */
-   /* ============================================================ */
-   footer {
-      background-color: #0F9D58;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      padding: 20px 0;
-   }
-
-   footer>* {
-      width: min(95%, 850px);
-      color: white;
-      margin: 5px 0;
-   }
-
-   footer>img {
-      width: 350px;
-   }
-
-   footer .social {
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-   }
-
-   @media screen and (max-width: 400px) {
-      footer>img {
-         width: 240px;
-      }
-   }
-
-   @media screen and (max-width: 280px) {
-      footer>img {
-         width: 200px;
-      }
-   }
+}
 
 
-   /* responsive */
-   /* ============================================================ */
-   @media screen and (max-width: 380px) {
-      .counter {
-         grid-template-columns: repeat(2, 1fr);
-         gap: clamp(5px, 2vw, 20px);
-      }
+/* ============================================================ */
+.gallery-cell {
+   width: 66%;
+   height: 200px;
+   margin-right: 10px;
+   background: #8C8;
+   counter-increment: gallery-cell;
+}
 
-      .counter div {
-         width: clamp(20px, 30vw, 100px);
-      }
-   }
-
-   @media screen and (max-width: 500px) {
-      .sponsor img {
-         width: min(100%, 130px);
-         height: min(100%, 95px);
-
-      }
-
-      .sponsor {
-         height: 190px;
-         width: 190px;
-
-         margin: 10px auto;
-
-      }
-   }
-
-   @media screen and (max-width: 768px) {
-
-      .shape {
-         top: 50vh;
-         height: min(30vh, 250px);
-      }
-
-      .circle {
-         right: -15px;
-      }
-
-      .square {
-         left: -15px;
-      }
-
-      .workshops-grid {
-         grid-template-columns: 1fr;
-      }
-
-      .workshop img {
-         width: clamp(100px, 30vw, 180px);
-      }
-
-      .mentor {
+/* cell number */
+.gallery-cell:before {
+   display: block;
+   text-align: center;
+   content: counter(gallery-cell);
+   line-height: 200px;
+   font-size: 80px;
+   color: white;
+}
 
 
-         padding: 18px;
-         font-size: 20px;
-      }
-
-      .mentor p {
-         font-size: 14px;
-         line-height: 1.3;
-      }
-
-      .mentor b {
-         font-size: max(16px, 2.3vw);
-         line-height: 1.3;
-      }
-
-
-   }
-
-   @media screen and (max-width:1000px) and (min-width: 768px),
-   (max-width: 400px) {
-      .workshop .title {
-         font-size: clamp(1.05rem, 2.2vw, 1.5rem);
-      }
-   }
-
-
-   /* ============================================================ */
-   .gallery-cell {
-      width: 66%;
-      height: 200px;
-      margin-right: 10px;
-      background: #8C8;
-      counter-increment: gallery-cell;
-   }
-
-   /* cell number */
-   .gallery-cell:before {
-      display: block;
-      text-align: center;
-      content: counter(gallery-cell);
-      line-height: 200px;
-      font-size: 80px;
-      color: white;
-   }
-
-
-   /* slider */
-   /* ============================================================ */
+/* slider */
+/* ============================================================ */
