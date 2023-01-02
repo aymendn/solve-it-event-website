@@ -9,6 +9,8 @@ body {
    overflow-x: hidden !important;
    min-height: 100%;
    overflow-y: auto;
+   position: relative;
+   top: 0;
 }
 
 
@@ -841,7 +843,7 @@ nav .button {
 }
 
 .workshops>* {
-   width: min(95%, 960px) !important;
+   width: min(97%, 960px) !important;
 }
 
 .workshops-grid {
@@ -1128,11 +1130,10 @@ footer .social {
    }
 
    .workshop img {
-      width: clamp(100px, 30vw, 180px);
+      width: clamp(130px, 30vw, 180px);
    }
 
    .mentor {
-
 
       padding: 18px;
       font-size: 20px;
@@ -1151,12 +1152,33 @@ footer .social {
 
 }
 
+@media screen and (max-width:340px) {
+   .workshop .extra-bold {
+      font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+   }
+
+   .workshop p {
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+   }
+}
+
+
 @media screen and (max-width:1000px) and (min-width: 768px),
 (max-width: 400px) {
    .workshop .title {
       font-size: clamp(1.05rem, 2.2vw, 1.5rem);
    }
 }
+
+@media screen and (max-width:300px) {
+   .workshop .title {
+      font-size: clamp(0.8rem, 1vw, 1rem);
+      padding: 5px 0 6px 6px;
+      margin: 2px 0;
+   }
+
+}
+
 
 
 /* ============================================================ */
