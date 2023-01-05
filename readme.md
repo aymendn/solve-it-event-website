@@ -23,3 +23,4 @@ Project is created with:
 * HTML, CSS and JavaScipt
 * [Swiper](https://swiperjs.com/) for sliders
 * [AOS - Animate On Scroll Library](https://michalsnik.github.io/aos/)
+* 
